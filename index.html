@@ -30,6 +30,8 @@
         }
 
         #card {
+            display: flex;
+            flex-direction: column;
             background-color: #fff;
             box-sizing: border-box;
             padding: 10px;
@@ -50,6 +52,13 @@
 
         #my-name strong {
             font-size: 16pt;
+        }
+
+        #bottom-container {
+            flex-grow: 1;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: column;
         }
 
         #about {
@@ -85,18 +94,18 @@
 <body>
 <div id="card">
     <div id="up-container">
-        <img id="icon" src="lycolia.png">
+        <img id="icon" src="lycolia.png" alt="">
         <div id="my-name">
             <strong>りこ🍥</strong><br>
             <small>Lycolia Rizzim</small>
         </div>
     </div>
-    <div>
-        <p id="about"><small>
+    <div id="bottom-container">
+        <div><p id="about"><small>
             神戸市在住 / Web系SE<br>
             Frontend, Backend, Middleware,<br>
             DevOps, Testing, etc...
-        </small></p>
+        </small></p></div>
         <div id="webinfo">
             <div id="url">
                 <ul>
